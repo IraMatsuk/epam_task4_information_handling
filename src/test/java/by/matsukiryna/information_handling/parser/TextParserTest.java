@@ -5,7 +5,6 @@ import by.matsukiryna.information_handling.parser.impl.ParagraphParserImpl;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-
 public class TextParserTest {
     TextParser textParser;
 

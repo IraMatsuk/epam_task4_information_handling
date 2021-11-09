@@ -19,12 +19,12 @@ public class TextReaderImplTest {
 
     @Test
     public void testReadFile() throws CompositeException {
-        String text = textReader.readFile(CORRECT_PATH);
+        String text = textReader.readTextFromFile(CORRECT_PATH);
         Assert.assertFalse(text.isEmpty());
     }
 
-    @Test
-    public void testReadTextFromFileWhenPathIsIncorrect() {
-        Assert.assertThrows(NullPointerException.class, () -> textReader.readFile(INCORRECT_PATH));
+    @Test(expectedExceptions = NullPointerException.class) //FIXME change on CompositeException instead of NPE
+    public void testReadTextFromFileWhenPathIsIncorrect() throws CompositeException {
+        textReader.readTextFromFile(INCORRECT_PATH);
     }
 }
