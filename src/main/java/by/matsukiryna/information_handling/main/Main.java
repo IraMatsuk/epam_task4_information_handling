@@ -35,7 +35,7 @@ public class Main {
         service.findEqual(textComponent);
         logger.info(service.findEqual(textComponent));
 
-        //service.countEqualWords(textComponent, "its");
+        service.countEqualWords(textComponent, "its");
 
     }
 }
