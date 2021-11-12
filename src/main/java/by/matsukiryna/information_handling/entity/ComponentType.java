@@ -18,4 +18,4 @@ public enum ComponentType {
     public String getDelimiter() {
         return delimiter;
     }
-    }
+}
