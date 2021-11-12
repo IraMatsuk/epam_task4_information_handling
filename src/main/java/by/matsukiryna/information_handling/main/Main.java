@@ -31,11 +31,8 @@ public class Main {
         service.countConsonant(sentences.toString());
 
         TextComponent list = service.findSentenceWithTheLongestWord(textComponent.toString());
-
         service.findEqual(textComponent);
         logger.info(service.findEqual(textComponent));
-
         service.countEqualWords(textComponent, "its");
-
     }
 }
